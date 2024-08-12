@@ -1,0 +1,24 @@
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - blognet
+
+  app:
+    build: .
+    container_name: blog-app
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/blogDB
+      - MONGO_INITDB_DATABASE=blogDB
+    depends_on:
+      - mongodb
+    networks:
+      - blognet
+
+networks:
+  blognet:

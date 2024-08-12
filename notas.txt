@@ -1,0 +1,28 @@
+Descargue la ultima imagen de mongodb de dockerhub
+modifiqué string de conexión mongodb en app.js (línea 20)
+agregué el método de "start" a la sección de scripts en package.json
+  "scripts": {
+    ...
+    "start": "node app.js"
+  },
+Creé Dockerfile e imagen de la app
+Creé docker-compose
+
+
+https://github.com/hitiksaini/blog-website-sample
+
+
+
+Cambios:
+- Agregar la opcion de editar noticias.
+    Creo la vista de edición "edit.ejs"
+    Creo los endpoints get y post para esa vista
+    Agrego el botón que redirija a "edit" desde la vista donde se visualizan las noticias "post"
+- Hacer que se muestre una noticia por fila. Que se vea a lo ancho
+    Cambie el parametro "col" de la clase "card" en "home.ejs"
+- Agregar la opcion de cargar una imagen con el texto
+    Agrego ruta que sirve la imagen
+    Cambio el schema de mongo para que cree las variables necesarias para guardar la imagen
+    Edito "edit.ejs" y "compose.ejs" para que guarden la imagen
+- Mostrar la imagen guardad en cada tarjeta, en el home
+    Edito "home.ejs" para que muestre la imagen
