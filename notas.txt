@@ -20,7 +20,7 @@ Cambios:
     Agrego el botón que redirija a "edit" desde la vista donde se visualizan las noticias "post"
 - Hacer que se muestre una noticia por fila. Que se vea a lo ancho
     Cambie el parametro "col" de la clase "card" en "home.ejs"
-- Agregar la opcion de cargar una imagen con el texto
+- Agregar la opcion de cargar una imagen en cada noticia
     Agrego ruta que sirve la imagen
     Cambio el schema de mongo para que cree las variables necesarias para guardar la imagen
     Edito "edit.ejs" y "compose.ejs" para que guarden la imagen
